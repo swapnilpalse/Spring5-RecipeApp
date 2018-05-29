@@ -24,6 +24,7 @@ public class IndexControllerTest {
 	@Mock
 	private Model model;
 	private IndexController indexController;
+	
 	@Before
 	public void init() {
 		MockitoAnnotations.initMocks(this);
