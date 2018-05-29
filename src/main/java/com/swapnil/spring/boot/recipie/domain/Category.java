@@ -1,7 +1,6 @@
 package com.swapnil.spring.boot.recipie.domain;
 
 import java.util.Set;
-
 import javax.persistence.*;
 @Entity
 public class Category {

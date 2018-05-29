@@ -21,6 +21,8 @@ import com.swapnil.spring.boot.recipie.repositories.CategoryRepository;
 import com.swapnil.spring.boot.recipie.repositories.RecipieRepository;
 import com.swapnil.spring.boot.recipie.repositories.UnitOfMeasurementRepository;
 
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
 @Component
 public class RecipieBootstrap implements ApplicationListener<ContextRefreshedEvent>{
 	private final CategoryRepository categoryRepository;

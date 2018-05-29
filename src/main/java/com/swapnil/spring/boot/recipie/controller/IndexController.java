@@ -12,7 +12,10 @@ import com.swapnil.spring.boot.recipie.repositories.CategoryRepository;
 import com.swapnil.spring.boot.recipie.repositories.UnitOfMeasurementRepository;
 import com.swapnil.spring.boot.recipie.service.RecipieService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
+@Slf4j
 public class IndexController {
 
 	private CategoryRepository categoryRepository;
