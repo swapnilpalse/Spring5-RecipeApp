@@ -29,5 +29,17 @@ private RecipieRepository recipieRepository;
 		recipieRepository.findAll().iterator().forEachRemaining(recipies:: add);
 		return recipies;
 	}
+	
+	 @Override
+	    public Recipie findById(Long l) {
+
+	        Optional<Recipie> recipeOptional = recipieRepository.findById(l);
+
+	        if (!recipeOptional.isPresent()) {
+	            throw new RuntimeException("Recipe Not Found!");
+	        }
+
+	        return recipeOptional.get();
+	    }
 
 }
